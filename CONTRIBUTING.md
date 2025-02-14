@@ -18,7 +18,7 @@ This guide focuses on contributing examples, although we welcome contributions t
 
 To contribute live examples all you need is a text editor, git, a GitHub account, and Nodejs.
 
-As far as text/code editors go, there are more editors than you can shake a stick at, so it's down to personal preference. [Visual Studio](https://code.visualstudio.com/download) and [Atom](https://atom.io/) are great editors we can definitely recommend.
+As far as text/code editors go, there are more editors than you can shake a stick at, so it's down to personal preference. [Visual Studio Code](https://code.visualstudio.com/download) and [WebStorm](https://www.jetbrains.com/webstorm/) are great editors we can definitely recommend.
 
 For more information on setting up Git on your machine, [read this article](https://help.github.com/articles/set-up-git/).
 
@@ -40,9 +40,9 @@ This will ensure that you have all the required development modules installed to
 
 We've written separate guides to contributing each type of example:
 
-- [Contributing a CSS example](CONTRIBUTING-CSS.md)
-- [Contributing an HTML example](CONTRIBUTING-HTML.md)
-- [Contributing a JavaScript example](CONTRIBUTING-JavaScript.md)
+- [Contributing a CSS example](contributing/css-examples.md)
+- [Contributing an HTML example](contributing/html-examples.md)
+- [Contributing a JavaScript example](contributing/javascript-examples.md)
 
 ## Testing
 
@@ -99,25 +99,30 @@ After your pull request is reviewed and merged, you can publish your example on 
 ### **HEIGHT** argument
 
 For CSS examples this argument must always be skipped. To include the margin example, the following code should be placed:
+
 ```plain
 {{EmbedInteractiveExample("pages/css/margin.html")}}
 ```
 
 For HTML examples or any other `tabbed` type, the value of **HEIGHT** argument should match the value of property `height` in `meta.json` of the example. Possible values are: `"tabbed-shorter"`, `"tabbed-standard"` and `"tabbed-taller"`, so `EmbedInteractiveExample` might look like any of those:
+
 ```plain
 {{EmbedInteractiveExample("pages/tabbed/dfn.html", "tabbed-shorter")}}
 ```
+
 ```plain
 {{EmbedInteractiveExample("pages/tabbed/del.html", "tabbed-standard")}}
 ```
+
 ```plain
 {{EmbedInteractiveExample("pages/tabbed/colgroup.html", "tabbed-taller")}}
 ```
 
 For JS examples, the editor is automatically selecting the appropriate height, based on the amount of lines in the example:
-  - Examples less than 7 lines long get the short editor, so you should provide the `"shorter"` argument to `EmbedInteractiveExample`
-  - Examples 7-12 lines inclusive get the standard editor, so you should not provide any extra argument to `EmbedInteractiveExample`
-  - Examples 13 or more lines long get the tall editor, so you should provide the `"taller"` argument to `EmbedInteractiveExample`
+
+- Examples less than 7 lines long get the short editor, so you should provide the `"shorter"` argument to `EmbedInteractiveExample`
+- Examples 7-12 lines inclusive get the standard editor, so you should not provide any extra argument to `EmbedInteractiveExample`
+- Examples 13 or more lines long get the tall editor, so you should provide the `"taller"` argument to `EmbedInteractiveExample`
 
 ## Thank you
 

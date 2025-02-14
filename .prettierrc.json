@@ -1,0 +1,12 @@
+{
+  "bracketSameLine": true,
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["**/*.md", "**/*.html"],
+      "options": {
+        "printWidth": 120
+      }
+    }
+  ]
+}

@@ -1,9 +1,14 @@
 const date = new Date(2012, 5);
-const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const options = {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+};
 const dateTimeFormat = new Intl.DateTimeFormat('en-US', options);
 
 const parts = dateTimeFormat.formatToParts(date);
-const partValues = parts.map(p => p.value);
+const partValues = parts.map((p) => p.value);
 
 console.log(partValues);
 // Expected output: "["Friday", ", ", "June", " ", "1", ", ", "2012"]"
